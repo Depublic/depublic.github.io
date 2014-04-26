@@ -1,4 +1,4 @@
 depublic.github.io
 ==================
 
-Web page
+We were thinking about storing our lyrics and demos here. With additional information about the band.
