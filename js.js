@@ -1,7 +1,22 @@
-var app = angular.module("myApp" , ['ngRoute']);
+var app = angular.module("myApp" , ["ngRoute"]);
 
+app.config(['$routeProvider', function ($routeProvider) {
+	$routeProvider
+	.when("/einir",{
+		templateUrl : "templates/einir.tpl.html"
+	}).when("/aron", {
+		templateUrl: 'templates/aron.tpl.html',
+      	// controller: 'HomeController'
+	}).when("/viktor", {
+		templateUrl: 'templates/viktor.tpl.html',
+      	// controller: 'CreateController'
+	}).when("/andri", {
+		templateUrl: 'templates/andri.tpl.html',
+      	// controller: 'ExamController'
+	}).otherwise({ redirectTo: '/' });
+}])
 
-app.controller('NameCtrl', ['$scope', function ($scope) {
+app.controller('NameCtrl', ['$scope',  function ($scope) {
 
 	$scope.albums = [
 		{ albumname : "The Silence In Your Head", year : "2014"},
@@ -25,10 +40,10 @@ app.controller('NameCtrl', ['$scope', function ($scope) {
 	];
 
 	$scope.members = [
-		{ name : "Andri Eyvindsson" },
-		{ name : "Aron Örn Brynjólfsson" },
-		{ name : "Einir Guðlaugsson" },
-		{ name : "Viktor Smári Ágústuson" },
+		{ name : "Andri Eyvindsson", url: "#andri" },
+		{ name : "Aron Örn Brynjólfsson", url: "#aron" },
+		{ name : "Einir Guðlaugsson", url: "#einir" },
+		{ name : "Viktor Smári Ágústuson", url: "#viktor" },
 	];
 	
 	$scope.websites = [
@@ -41,19 +56,9 @@ app.controller('NameCtrl', ['$scope', function ($scope) {
 
 }]);
 
- 
-app.controller('RouteCtrl', ['$scope', function ($scope) {
-	
-}]);
 
-
-app.config(['$routeProvider',
- function ($routeProvider) {
- 	$routeProvider
- 	.when('/pizza', {
-
- 		templateUrl : 'route.html',
- 		controller : 'RouteCtrl'
- 	})
-	
-}])
+app.controller('AppCtrl',function ($scope) {
+	$scope.model = {
+		message :"yea"
+	}
+});
