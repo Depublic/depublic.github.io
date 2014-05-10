@@ -18,6 +18,8 @@ app.config(['$routeProvider', function ($routeProvider) {
 
 app.controller('NameCtrl', ['$scope',  function ($scope) {
 
+	$scope.title = "Depublic Music";
+
 	$scope.albums = [
 		{ albumname : "The Silence In Your Head", year : "2014"},
 	];

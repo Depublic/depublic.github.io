@@ -5,15 +5,40 @@
 		<title>Depublic music</title>
 		<link rel="stylesheet" href="stuff/bootstrap/dist/css/bootstrap.min.css">
 		<link rel="stylesheet" href="css.css">
+		<link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
 		<script type="text/javascript" src="stuff/angular/angular.min.js"></script>
 		<script type="text/javascript" src="stuff/angular-route/angular-route.js"></script>
 		<script src="js.js"></script>
 	</head>
-	<body >
+	<body>
 		<div class="container">
 			<div ng-controller="NameCtrl">  <!-- Controller start -->
 
-				<h1> Depublic Music</h1>
+				<h1><a href="/">{{title}}</a></h1>
+
+				<div class="row">
+					<div class="col-md-12">
+						<h3>Bio</h3>
+					</div>
+				</div>
+
+				<hr> <!-- ################################ -->
+
+				<div class="row">
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<h4>Band members</h4>
+						<ul>
+							<li ng-repeat="member in members"> 
+								<a href="{{member.url}}">{{member.name}} </a>
+							</li>
+						</ul>
+					</div>
+
+				<!-- Here the route will bind -->
+					<div ng-view class="col-md-6 col-sm-6 col-xs-12"></div>
+				</div> <!-- End row -->
+
+				<hr> <!-- ################################ -->
 
 				<div class="row">
 					<div class="col-md-6 col-sm-6 col-xs-12">
@@ -33,21 +58,7 @@
 					</div>
 				</div> <!-- End row -->
 
-
-				<div class="row">
-
-					<div class="col-md-6 col-sm-6 col-xs-12">
-						<h4>Band members</h4>
-						<ul>
-							<li ng-repeat="member in members"> 
-								<a href="{{member.url}}">{{member.name}} </a>
-							</li>
-						</ul>
-					</div>
-
-				<!-- Here the route will bind -->
-				<div ng-view class="col-md-6 col-sm-6 col-xs-12"></div>
-				</div> <!-- End row -->
+				<hr> <!-- ################################ -->
 
 				<div class="row">
 					<div class="col-md-12">
@@ -63,8 +74,8 @@
 
 			</div> <!-- Controller End -->
 		</div> <!-- End Container -->
+
 		<!-- Scripts -->
-		
 		<script>
 			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
