@@ -1,4 +1,4 @@
-var app = angular.module("myApp" , []);
+var app = angular.module("myApp" , ['ngRoute']);
 
 
 app.controller('NameCtrl', ['$scope', function ($scope) {
@@ -39,4 +39,21 @@ app.controller('NameCtrl', ['$scope', function ($scope) {
 
 	];
 
+}]);
+
+ 
+app.controller('RouteCtrl', ['$scope', function ($scope) {
+	
+}]);
+
+
+app.config(['$routeProvider',
+ function ($routeProvider) {
+ 	$routeProvider
+ 	.when('/pizza', {
+
+ 		templateUrl : 'route.html',
+ 		controller : 'RouteCtrl'
+ 	})
+	
 }])
