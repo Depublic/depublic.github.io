@@ -1,0 +1,24 @@
+{
+  "name": "Depublic.github.io",
+  "version": "1.0.0",
+  "homepage": "www.depublicmusic.com",
+  "authors": [
+    "viktorsmari <viktorsmari@gmail.com>"
+  ],
+  "description": "Depublic's web site",
+  "keywords": [
+    "Music",
+    "depublic",
+    "rock",
+    "heavymetal"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "stuff",
+    "test",
+    "tests"
+  ]
+}
