@@ -28,15 +28,15 @@ app.controller('NameCtrl', ['$scope',  function ($scope) {
 		{ name : "Out Of Control" },
 		{ name : "Cream" },
 		{ name : "Whatever Comes Tomorrow" },
+		{ name : "Alone" },
 		{ name : "Things We Lost" },
 		{ name : "The Promise" },
-		{ name : "Alone" },
 		{ name : "The War Lives On " },
+		{ name : "7 Days" },
 		{ name : "Your Shadow" },
 		{ name : "Fed Up" },
-		{ name : "7 Days" },
-		{ name : "Slow Down" },
 		{ name : "Bridges You Have Burned" },
+		{ name : "Slow Down" },
 		{ name : "Forplay" },
 		{ name : "Lap Dance" }
 	];
