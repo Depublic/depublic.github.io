@@ -1,10 +1,6 @@
 body{
 	background-color: #000;
 	background: url(img/memblue.jpg) no-repeat center center fixed;
-	/*background-size: 1920px 1080px;*/
-	/*background-size: 1280px 720px;*/
-	/*background-repeat:no-repeat;*/
-	/*background-position: center;*/
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -15,6 +11,11 @@ body{
 	font-family: 'Ubuntu Condensed', sans-serif;
 	font-size: 170%;
 
+
+}
+
+a:link, a:visited{
+	color:#85a3a9;
 }
 
 
