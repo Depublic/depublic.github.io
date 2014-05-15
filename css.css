@@ -1,5 +1,7 @@
 body{
 	background-color: #422833;
+	background-image: url("img/memblue.jpg");
+	background-size: 1920px 1080px;
 	color:#E5E6D8;
 
 	font-family: 'Ubuntu Condensed', sans-serif;
