@@ -26,17 +26,17 @@ app.controller('NameCtrl', ['$scope',  function ($scope) {
 
 	$scope.songs = [
 		{ name : "Out Of Control" },
-		{ name : "Cream" },
+		{ name : "Scream" },
 		{ name : "Whatever Comes Tomorrow" },
-		{ name : "Alone" },
-		{ name : "Things We Lost" },
-		{ name : "The Promise" },
-		{ name : "The War Lives On " },
+		{ name : "Sign Of A Fallen Angel" },
+		{ name : "Lost It All" },
+		{ name : "The Promise I Made To You" },
+		{ name : "The War Lives On" },
 		{ name : "7 Days" },
 		{ name : "Your Shadow" },
 		{ name : "Fed Up" },
-		{ name : "Bridges You Have Burned" },
-		{ name : "Slow Down" },
+		{ name : "The Bridges You Have Burned" },
+		{ name : "Slow Down!" },
 		{ name : "Forplay" },
 		{ name : "Lap Dance" }
 	];
