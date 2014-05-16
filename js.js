@@ -37,7 +37,7 @@ app.controller('NameCtrl', ['$scope',  function ($scope) {
 		{ name : "Fed Up" },
 		{ name : "The Bridges You Have Burned" },
 		{ name : "Slow Down!" },
-		{ name : "Forplay" },
+		{ name : "Foreplay" },
 		{ name : "Lap Dance" }
 	];
 
