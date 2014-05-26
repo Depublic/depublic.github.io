@@ -60,8 +60,8 @@
 						<h4>Song names</h4>
 						<ol>
 							<li ng-repeat="song in songs"> 
-								<a href="{{song.songurl}}">{{song.name}}</a> 
-								<a href="{{song.lyrics}}">(Lyrics)</a>
+								{{song.name}} <a href="{{song.songurl}}">(Download)</a> 
+								<a href="{{song.lyrics}}" target="_blank">(Lyrics)</a>
 							</li>
 						</ol>
 					</div>
