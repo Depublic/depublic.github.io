@@ -59,7 +59,10 @@
 					<div class="col-md-6 col-sm-6 col-xs-12">
 						<h4>Song names</h4>
 						<ol>
-							<li ng-repeat="song in songs">{{song.name}}</li>
+							<li ng-repeat="song in songs"> 
+								<a href="{{song.songurl}}">{{song.name}}</a> 
+								<a href="{{song.lyrics}}">(Lyrics)</a>
+							</li>
 						</ol>
 					</div>
 				</div> <!-- End row -->
