@@ -113,7 +113,7 @@ app.controller('NameCtrl', ['$scope',  function ($scope) {
 	$scope.members = [
 		{ name : "Andri Eyvindsson", url: "#andri" },
 		{ name : "Aron Örn Brynjólfsson", url: "#aron" },
-		{ name : "Einir Guðlaugsson", url: "#einir" },
+		{ name : "Einir Guðlaugsson", url: "#einir", pic: "img/einir.jpg" },
 		{ name : "Viktor Smári Ágústuson", url: "#viktor" },
 	];
 	
